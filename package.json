@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "prisma generate && next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && prisma generate && next build",
+    "start": "node api.js && next start",
     "lint": "next lint",
     "build:email": "email build",
     "dev:email": "email dev",
@@ -23,7 +23,7 @@
     "react-dom": "^18",
     "react-toastify": "^10.0.6",
     "resend": "^4.8.0",
-    "sass": "^1.94.1",
+    "sass": "^1.94.2",
     "sharp": "0.34.5"
   },
   "devDependencies": {
